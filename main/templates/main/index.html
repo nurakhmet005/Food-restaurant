@@ -1,0 +1,357 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}" />
+    <link
+      rel="icon"
+      href="{% static 'main/images/logo.svg' %}"
+      type="images/svg+xml"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'main/font-awesome-4.7.0/css/font-awesome.min.css' %}"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Главная страница</title>
+  </head>
+  <body>
+    <aside class="aside">
+      <div class="aside__images">
+        <img
+          src="{% static 'main/images/logo.svg' %}"
+          alt="Логотип"
+          class="aside__logo"
+        />
+        <div class="aside__burger">
+          <span class="aside__span aside__span-top"></span>
+          <span class="aside__span aside__span-center"></span>
+          <span class="aside__span aside__span-bottom"></span>
+        </div>
+      </div>
+      <div class="aside__icons">
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        <i class="fa fa-vk" aria-hidden="true"></i>
+        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+      </div>
+    </aside>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="" class="nav__link">Меню</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Доставка</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Оплата</a></li>
+        </ul>
+        <button class="reserve-button primary-button nav__button">
+          Бронь столика
+        </button>
+      </nav>
+      <div class="header__content" data-aos="fade-up" data-aos-duration="3000">
+        <h1>
+          Видовой ресторан Food Exxe Relo <br />
+          на Крестовском острове
+        </h1>
+      </div>
+    </header>
+    <main class="main">
+      <section id="about">
+        <div class="container about">
+          <h3
+            class="primary-header"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            О ресторане
+          </h3>
+          <div
+            class="content about__content"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <div class="content__left-side">
+              <h1>
+                Food <br />
+                Exxe <br />
+                Relo
+              </h1>
+            </div>
+            <div class="content__right-side">
+              <p>
+                Sed vel ornare ut rhoncus, ac ut nibh. Amet at sit et nibh. In
+                lectus phasellus non ornare eget velit. Facilisi urna, tristique
+                dui, rhoncus, dolor. Tincidunt enim gravida dignissim leo
+                pulvinar sit volutpat nulla vestibulum.
+              </p>
+              <p>
+                Morbi pellentesque enim massa laoreet vel id. Lectus ac,
+                facilisis neque turpis. Morbi massa enim nullam sem vehicula.
+                Amet quis pellentesque enim porttitor lectus interdum. Nisi,
+                faucibus pharetra at porttitor. Fringilla luctus pretium in
+                viverra. In adipiscing tempor amet malesuada ullamcorper ut
+                sagittis. Dui, scelerisque vulputate risus massa dictum. Cras at
+                quis in eu, faucibus feugiat vel. At.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="menu">
+        <div class="container menu">
+          <h3
+            class="primary-header"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            Меню
+          </h3>
+          <div
+            class="content menu__content"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <div class="content__left-side">
+              <h1>Меню</h1>
+            </div>
+            <div class="content__right-side">
+              <p>
+                At faucibus nullam mauris vitae ut non. Augue libero non nibh
+                nec, et eget erat. Nascetur nunc neque, varius massa aliquam
+                interdum turpis massa. Ac tortor aliquam risus, interdum nisl
+                mauris sit. Ut placerat fermentum pellentesque ac at. Vitae
+                venenatis faucibus urna mi eget vitae quam eu. Euismod sed
+                mauris id turpis iaculis. Erat rutrum dolor, vitae morbi.
+              </p>
+              <p>
+                Nunc cras cras aliquet blandit faucibus massa sagittis semper.
+              </p>
+            </div>
+          </div>
+          <div
+            class="content menu__images"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <div class="menu__images-content">
+              <div class="menu__images-container">
+                <img src="{% static 'main/images/menu.svg' %}" alt="" />
+              </div>
+              <div class="menu__images-h3">
+                <h3 class="menu__images-header primary-header">
+                  <a href="">Основное меню</a>
+                </h3>
+              </div>
+            </div>
+            <div class="menu__images-content">
+              <div class="menu__images-container">
+                <img src="{% static 'main/images/bar.svg' %}" alt="" />
+              </div>
+              <div class="menu__images-h3">
+                <h3 class="menu__images-header primary-header">
+                  <a href="">Барная карта</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="delivery">
+        <div class="container delivery">
+          <h3
+            class="primary-header"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            Доставка
+          </h3>
+          <div
+            class="content delivery__content"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <div class="content__left-side">
+              <h1>
+                Служба <br />
+                доставки
+              </h1>
+            </div>
+            <div class="content__right-side">
+              <p>
+                Phasellus diam, ultrices lobortis integer et. Diam, purus vel
+                sagittis, non, a. In risus, venenatis enim vitae mauris aliquet
+                orci. Consectetur nibh interdum nullam ut lobortis eu etiam sem.
+                Et in vitae pellentesque non, lectus orci natoque faucibus
+                suspendisse. Semper aliquam id et ultrices velit donec lacus. In
+                odio sit nibh volutpat cras placerat sit feugiat dignissim.
+                Rutrum et suspendisse tortor, lobortis eleifend in fringilla.
+                Egestas cursus imperdiet cursus dui, nulla id massa. Hendrerit
+                nam enim semper porttitor imperdiet diam semper. Nulla sit etiam
+                cras morbi enim elementum euismod sapien.
+              </p>
+              <div class="delivery__buttons">
+                <button class="primary-button delivery__more">Подробнее</button>
+                <button class="default-button delivery__terms">
+                  Условия доставки
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contacts">
+        <div class="container contacts">
+          <h3
+            class="primary-header"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            Контакты
+          </h3>
+          <div
+            class="contacts__content"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0"
+          >
+            <div class="contacts__time">
+              <div class="contacts__time-side">
+                <div class="contacts__time-container">
+                  <span class="contacts__time-number">2</span>
+                  <span class="contacts__time-minutes">мин</span>
+                  <p>
+                    из центра <br />
+                    Санкт-Петербурга
+                  </p>
+                </div>
+                <div class="contacts__time-container">
+                  <span class="contacts__time-number">12</span>
+                  <span class="contacts__time-minutes">мин</span>
+                  <p>
+                    из центра <br />
+                    Зеленогорск
+                  </p>
+                </div>
+              </div>
+              <div class="contacts__time-side">
+                <div class="contacts__time-container">
+                  <span class="contacts__time-number">42</span>
+                  <span class="contacts__time-minutes">мин</span>
+                  <p>
+                    из аэропорта <br />
+                    Пулково
+                  </p>
+                </div>
+                <div class="contacts__time-container">
+                  <span class="contacts__time-number">52</span>
+                  <span class="contacts__time-minutes">мин</span>
+                  <p>
+                    из города <br />
+                    Павловск
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__map">
+              <img
+                src="{% static 'main/images/map.svg' %}"
+                alt=""
+                class="map"
+              />
+            </div>
+            <div class="contacts__pop-up">
+              <div class="contacts__icons location">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p>Санкт-Петербург, Северная дорога, 11</p>
+              </div>
+              <div class="contacts__icons phone">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>+7 (921) 777-77-77</p>
+              </div>
+              <div class="contacts__schedule">
+                <h2>Время работы</h2>
+                <div class="contacts__schedule-1">
+                  <span class="contacts__day">Вск-Чт</span>
+                  <span class="contacts__gap">с 12:00 до 23:00</span>
+                </div>
+                <div class="contacts__schedule-2">
+                  <span class="contacts__day">Пт-Сб</span>
+                  <span class="contacts__gap">с 12:00 до 03:00</span>
+                </div>
+              </div>
+              <div class="contacts__buttons">
+                <button class="reserve-button primary-button">
+                  Бронь столика
+                </button>
+                <button class="question-button">Задать вопрос</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <img src="{% static 'main/images/logo.svg' %}" alt="" />
+        <span>Политика конфиденциальности</span>
+        <span>Дизайн d-e-n.ru</span>
+      </div>
+    </footer>
+    <div class="modal hidden">
+      <div class="modal__window">
+        <span class="modal__close">&times;</span>
+        <div class="modal__content">
+          <img src="{% static 'main/images/logo.svg' %}" alt="" />
+          <h1>Забронировать столик</h1>
+          <form class="modal__form" method="post">
+            {% csrf_token %} {{form.name}} {{form.phone}}
+            <div class="modal__flex">{{form.guests}} {{form.time}}</div>
+            <button class="primary-button" type="submit">Забронировать</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="burger hidden">
+      <div class="burger__content">
+        <div class="burger__top">
+          <img src="{% static 'main/images/logo.svg' %}" alt="" />
+          <span class="burger__close">&times;</span>
+        </div>
+        <div class="burger__center">
+          <a href="" class="burger__link burger__menu">Меню</a>
+          <a href="" class="burger__link burger__delivery">Доставка</a>
+          <a href="" class="burger__link burger__payment">Оплата</a>
+          <button class="reserve-button primary-button">Бронь столика</button>
+        </div>
+        <div class="burger__bottom">
+          <div class="burger__icons">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <i class="fa fa-vk" aria-hidden="true"></i>
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{% static 'main/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{% static 'main/js/main.js' %}"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
